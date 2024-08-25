@@ -1,0 +1,169 @@
+body {
+    background-color: #363636;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    & section {
+        background-color: white;
+        min-height: 10dvh;
+        border-radius: 10px;
+        width: 60%;
+    }
+}
+
+#body {
+    min-height: 60dvh;
+}
+
+#corridas,
+#metricas {
+    padding: 20px 40px;
+}
+
+.cabecalho {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.field {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.field #time-input {
+    display: flex;
+    gap: 5px;
+    flex-wrap: nowrap;
+
+    & input {
+        width: 3rem;
+    }
+}
+
+
+
+#menu-bar {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: purple;
+
+}
+
+
+#distancia,
+#ganho {
+    width: 8rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+
+#table-container {
+    overflow: auto;
+    max-height: 25dvh;
+    /* border: 1px solid #363636; */
+}
+
+thead {
+    border-bottom: 1px solid gray;
+}
+
+th,
+td {
+    text-align: left;
+    text-wrap: nowrap;
+    padding: 8px;
+}
+
+
+
+tbody tr {
+    border-top: #aaaaaa 1px solid;
+}
+
+
+#mensagem {
+    display: block;
+}
+
+.infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+@media (max-width:756px) {
+
+    .container section {
+
+        width: 85%;
+
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .infos {
+        flex-direction: column;
+
+    }
+
+    .info-box {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+}
