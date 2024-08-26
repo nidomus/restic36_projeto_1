@@ -24,7 +24,8 @@ Siga as etapas abaixo para configurar o ambiente de desenvolvimento:
 Clone o repositório para sua máquina local:
 
 
-git clone https://github.com/seu-usuario/gerenciamento-de-corridas.git
+git clone https://github.com/nidomus/restic36_projeto_1.git
+
 cd gerenciamento-de-corridas
 
 2. Instale as Dependências
