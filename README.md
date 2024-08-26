@@ -20,23 +20,23 @@ Este projeto é uma aplicação web para gerenciar corridas de rua. Ele permite 
 ## Configurando e Acessando o ambiente de desenvolvimento do Projeto
 Siga as etapas abaixo para configurar o ambiente de desenvolvimento:
 
-- Clone o Repositório
+###Clone o Repositório
 Clone o repositório para sua máquina local:
 
 git clone https://github.com/nidomus/restic36_projeto_1.git
 
 cd gerenciamento-de-corridas
 
-- Instale as Dependências
+###Instale as Dependências
 Use o Yarn para instalar todas as dependências necessárias:
 
 yarn install
 
-- Compile o Projeto
+###Compile o Projeto
 Compile o código TypeScript para JavaScript e inicie o Webpack Dev Server:
 
 yarn dev
 
-- Acesse a Aplicação
+###Acesse a Aplicação
 
 Após iniciar o servidor de desenvolvimento, a aplicação estará disponível em http://localhost:9000
