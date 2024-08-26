@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <title>Corridas</title>
 
 </head>
@@ -12,13 +13,11 @@
 
     <div class="container">
 
-        <section id="body">
-
-            <div id="corridas">
-
+        <section>
+            <div id="header">
                 <h1>Gerenciador de Corridas</h1>
-                <hr>
-                <br>
+            </div>
+            <div id="body">
                 <form onsubmit="return salvarCorrida();" id="addCorridas">
 
                     <fieldset>
@@ -28,7 +27,7 @@
                             <input required type="date" id="data">
                         </div>
                         <div class="field">
-                            <label for="data">Tempo de Corrida</label>
+                            <label for="data">Tempo </label>
                             <div id="time-input">
                                 <input type="number" required aria-label="Horas" placeholder="Hr" id="horas">
                                 <input type="number" required aria-label="Minutos" placeholder="Min" id="minutos">
@@ -64,10 +63,7 @@
                             <th></th>
                         </thead>
 
-                        <tbody id="corpo">
-
-
-                        </tbody>
+                        <tbody id="corpo"></tbody>
 
                     </table>
                 </div>
@@ -76,78 +72,56 @@
                     <p>Não há nenhuma corrida registrada</p>
                 </div>
             </div>
-            <div id="metricas">
+        </section>
+        <section id="metricas">
+            <div id="header">
+                <h1>Métricas</h1>
+            </div>
+            <div id="body">
+                <div>
+                    <div class="infos">
+                        <div class="info-box">
+                            <p class="info-title">
+                                Corridas
+                            </p>
+                            <p class="info-value" id="info-corridas">-</p>
+                        </div>
 
-                <div class="cabecalho">
 
-                    <h1 class="title">Métricas</h1>
+                        <div class="info-box">
+                            <p class="info-title">
+                                Distância Total
+                            </p>
+                            <p class="info-value" id="info-kmTotal">-</p>
+                        </div>
 
-                    <div class="select" onchange="gerarDados()">
+                        <div class="info-box">
+                            <p class="info-title">
+                                Distância Média
+                            </p>
+                            <p class="info-value" id="info-kmMedio">-</p>
+                        </div>
 
-                        <select name="" id="select-mes" id="">
+                        <div class="info-box">
+                            <p class="info-title">
+                                Tempo Total
+                            </p>
+                            <p class="info-value" id="info-tempoTotal">-</p>
+                        </div>
 
-                            <option value="01" selected>Janeiro</option>
-                            <option value="02">Fevereiro</option>
-                            <option value="03">Março</option>
-                            <option value="04">Abril</option>
-                            <option value="05">Maio</option>
-                            <option value="06">Junho</option>
-                            <option value="07">Julho</option>
-                            <option value="08">Agosto</option>
-                            <option value="09" selected>Setembro</option>
-                            <option value="10">Outubro</option>
-                            <option value="11">Novembro</option>
-                            <option value="12">Dezembro</option>
-
-                        </select>
+                        <div class="info-box">
+                            <p class="title is-size-7 has-text-centered">
+                                Pace Médio
+                            </p>
+                            <p class="info-value" id="info-maiorVelocidade"> - </p>
+                        </div>
                     </div>
 
-                </div>
-
-
-                <div class="infos">
-                    <div class="info-box">
-                        <p class="info-title">
-                            Corridas
-                        </p>
-                        <p class="info-value" id="info-corridas">-</p>
-                    </div>
-
-
-                    <div class="info-box">
-                        <p class="info-title">
-                            KM Total
-                        </p>
-                        <p class="info-value" id="info-kmTotal">-</p>
-                    </div>
-
-
-                    <div class="info-box">
-                        <p class="info-title">
-                            Tempo Total
-                        </p>
-                        <p class="info-value">-</p>
-                    </div>
-
-
-                    <div class="info-box">
-                        <p class="info-title">
-                            KM Médio
-                        </p>
-                        <p class="info-value" id="info-kmMedio">-</p>
-                    </div>
-
-                    <div class="info-box">
-                        <p class="title is-size-7 has-text-centered">
-                            Maior Veloc.
-                        </p>
-                        <p class="info-value" id="info-maiorVelocidade"> - </p>
-                    </div>
                 </div>
 
             </div>
-        </section>
 
+        </section>
     </div>
 
 </body>

@@ -1,39 +1,69 @@
 body {
     background-color: #363636;
+    font-family: "Poppins";
 }
+
 
 .container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    height: 100%;
+    margin-top: 8dvh;
 
     & section {
         background-color: white;
-        min-height: 10dvh;
+        min-height: 80dvh;
+        min-width: 30%;
         border-radius: 10px;
-        width: 60%;
     }
 }
 
-#body {
-    min-height: 60dvh;
-}
 
-#corridas,
-#metricas {
+
+#header,
+#body {
     padding: 20px 40px;
 }
 
-.cabecalho {
-
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
+.infos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px
+}
+
+.info-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 20px;
+    border: 2px solid green;
+    box-shadow: 1px 2px gray;
+}
+
+@media (max-width:896px) {
+
+    .container {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .container section {
+        width: 100%;
+        height: auto;
+    }
+}
 
 fieldset {
     display: flex;
@@ -59,23 +89,21 @@ fieldset {
     }
 }
 
-
-
-#menu-bar {
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+button {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
 }
 
-.nav-link {
-    text-decoration: none;
-    font-weight: bold;
-    color: purple;
+button#add-button {
+    background-color: rgba(0, 104, 0, 0.774);
+    color: aliceblue;
 
 }
 
+button.del-button {
+    background-color: rgb(255, 99, 99);
+}
 
 #distancia,
 #ganho {
@@ -96,7 +124,7 @@ table {
 
 #table-container {
     overflow: auto;
-    max-height: 25dvh;
+    max-height: 46dvh;
     /* border: 1px solid #363636; */
 }
 
@@ -122,29 +150,9 @@ tbody tr {
     display: block;
 }
 
-.infos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-.info-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 
 @media (max-width:756px) {
 
-    .container section {
-
-        width: 85%;
-
-    }
 
     fieldset {
         display: flex;
@@ -154,16 +162,6 @@ tbody tr {
         align-items: flex-start;
     }
 
-    .infos {
-        flex-direction: column;
 
-    }
-
-    .info-box {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: flex-start;
-        width: 100%;
-    }
 
 }
