@@ -184,7 +184,6 @@ function gerarDados() {
         if (velocidade > maiorVelocidade) {
             maiorVelocidade = velocidade
         }
-        console.log(maiorVelocidade)
 
         kmTotal += Number(corrida.distancia)
         tempoTotal += tempoSeg
