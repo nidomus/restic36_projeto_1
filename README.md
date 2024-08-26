@@ -28,14 +28,24 @@ git clone https://github.com/nidomus/restic36_projeto_1.git
 cd gerenciamento-de-corridas
 
 ### Instale as Dependências
-Use o Yarn para instalar todas as dependências necessárias:
+Use o Yarn ou o npm para instalar todas as dependências necessárias:
 
 yarn install
+
+ou
+
+npm install
+
+
 
 ### Compile o Projeto
 Compile o código TypeScript para JavaScript e inicie o Webpack Dev Server:
 
 yarn dev
+
+ou
+
+npm run dev
 
 ### Acesse a Aplicação
 

@@ -29,14 +29,17 @@
                         <div class="field">
                             <label for="data">Tempo </label>
                             <div id="time-input">
-                                <input type="number" required aria-label="Horas" placeholder="Hr" id="horas">
-                                <input type="number" required aria-label="Minutos" placeholder="Min" id="minutos">
-                                <input type="number" required aria-label="Segundos" placeholder="Seg" id="segundos">
+                                <input type="number" min="0" max="24" required aria-label="Horas" placeholder="Hr"
+                                    id="horas">
+                                <input type="number" min="0" max="60" required aria-label="Minutos" placeholder="Min"
+                                    id="minutos">
+                                <input type="number" min="0" max="60" required aria-label="Segundos" placeholder="Seg"
+                                    id="segundos">
                             </div>
                         </div>
                         <div class="field">
                             <label for="distancia">Distância</label>
-                            <input type="number" required placeholder="KM" id="distancia">
+                            <input type="number" min="0" required placeholder="KM" id="distancia">
                         </div>
                         <div class="field">
                             <label for="ganho">Ganho de Elevação</label>
